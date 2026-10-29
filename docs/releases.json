@@ -2617,6 +2617,23 @@
             "releases": [
                 {
                     "prerelease": false,
+                    "tag_name": "1.8.1",
+                    "name": "Release 1.8.1",
+                    "published_at": "2026-10-29T19:29:47Z",
+                    "html_url": "https://github.com/OpenKNX/OAM-ShutterController/releases/tag/1.8.1",
+                    "body": "- Added REG1-LAN-TP-Base (KNX-TP) and REG1-LAN-Base (KNX-IP) as compatible devices, both with LAN and webinterface",
+                    "assets": [
+                        {
+                            "name": "ShutterController-Release-1.8.1.zip",
+                            "size": 9013788,
+                            "digest": "sha256:3154540f3097c9d844e5b4913e60a23c4daefb24655f00d82b0e1d79e48df7f7",
+                            "updated_at": "2026-10-29T19:29:44Z",
+                            "browser_download_url": "https://github.com/OpenKNX/OAM-ShutterController/releases/download/1.8.1/ShutterController-Release-1.8.1.zip"
+                        }
+                    ]
+                },
+                {
+                    "prerelease": false,
                     "tag_name": "1.7.0",
                     "name": "Release 1.7.0",
                     "published_at": "2026-08-04T17:27:12Z",
@@ -2753,10 +2770,10 @@
                 },
                 {
                     "prerelease": false,
-                    "tag_name": "v1",
+                    "tag_name": "1.0",
                     "name": "Release 1.0",
                     "published_at": "2025-05-22T18:25:00Z",
-                    "html_url": "https://github.com/OpenKNX/OAM-ShutterController/releases/tag/v1",
+                    "html_url": "https://github.com/OpenKNX/OAM-ShutterController/releases/tag/1.0",
                     "body": "Bitte vor Verwendung die Anwendungsbeschreibung lesen. Insbesondere das Kapitel [Handbetriebseinstellung](https://github.com/OpenKNX/OFM-ShutterControllerModule/blob/v1/doc/Applikationsbeschreibung-ShutterController.md#handbetriebseinstellung). \r\nDieses enth\u00e4lt wichtige Informationen \u00fcber die notwendigen Verbindungen der Gruppen Adressen.",
                     "assets": [
                         {
@@ -2764,7 +2781,7 @@
                             "size": 5415396,
                             "digest": null,
                             "updated_at": "2025-05-22T18:24:18Z",
-                            "browser_download_url": "https://github.com/OpenKNX/OAM-ShutterController/releases/download/v1/ShutterController-Release-1.0.zip"
+                            "browser_download_url": "https://github.com/OpenKNX/OAM-ShutterController/releases/download/1.0/ShutterController-Release-1.0.zip"
                         }
                     ]
                 },
@@ -2803,7 +2820,7 @@
                     ]
                 }
             ],
-            "hw_avail_open": 2
+            "hw_avail_open": 4
         },
         "OAM-Homematic": {
             "repo_url": "https://github.com/OpenKNX/OAM-Homematic",

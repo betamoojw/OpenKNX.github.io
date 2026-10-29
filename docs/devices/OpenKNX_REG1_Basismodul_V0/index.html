@@ -31,6 +31,7 @@
         table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(23):hover) tr > :nth-child(23).colHover,
         table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(24):hover) tr > :nth-child(24).colHover,
         table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(25):hover) tr > :nth-child(25).colHover,
+        table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(26):hover) tr > :nth-child(26).colHover,
         
         table.openknxTitleTable tbody tr:hover {
             background-color: #dfd;
@@ -58,7 +59,8 @@
         table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(22):hover) thead th.rotate45:nth-child(22) div span,
         table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(23):hover) thead th.rotate45:nth-child(23) div span,
         table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(24):hover) thead th.rotate45:nth-child(24) div span,
-        table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(25):hover) thead th.rotate45:nth-child(25) div span
+        table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(25):hover) thead th.rotate45:nth-child(25) div span,
+        table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(26):hover) thead th.rotate45:nth-child(26) div span
         
         {
             border-bottom: 2px solid #9f9;
@@ -120,6 +122,8 @@
         
         <col data-ofm="OFM-Meter" />
         
+        <col data-ofm="OFM-InternetWeatherModule" />
+        
         <col data-ofm="OFM-OneWireModule" />
         
         <col data-ofm="OFM-PresenceModule" />
@@ -140,7 +144,7 @@
     <thead>
       <tr class="colGroupTitle">
         <th class="before-new-cols">Applikation</th>
-        <th class="before-new-cols" colspan="23">Enthaltene Module</th>
+        <th class="before-new-cols" colspan="24">Enthaltene Module</th>
         
       </tr>
       <tr class="hoverTrigger">
@@ -180,6 +184,8 @@
         
         <th class="rotate45" data-ofm="OFM-Meter"><div><span><a href="/ofm/OFM-Meter">OFM-Meter</a></span></div></th>
         
+        <th class="rotate45" data-ofm="OFM-InternetWeatherModule"><div><span><a href="/ofm/OFM-InternetWeatherModule">OFM-InternetWeatherModule</a></span></div></th>
+        
         <th class="rotate45" data-ofm="OFM-OneWireModule"><div><span><a href="/ofm/OFM-OneWireModule">OFM-OneWireModule</a></span></div></th>
         
         <th class="rotate45" data-ofm="OFM-PresenceModule"><div><span><a href="/ofm/OFM-PresenceModule">OFM-PresenceModule</a></span></div></th>
@@ -218,6 +224,7 @@
         <th data-ofm="OFM-SensorModule" class="colHover" title="Sensoren: Hardware-Umweltsensoren"><img src="https://raw.githubusercontent.com/OpenKNX/OGM-Common/refs/heads/v1/src/Baggages/Icons/gauge.png" /></th>
         <th data-ofm="OFM-Feedback" class="colHover" title="">|</th>
         <th data-ofm="OFM-Meter" class="colHover" title="Zähler: Auswertung von Zählern"><img src="https://raw.githubusercontent.com/OpenKNX/OGM-Common/refs/heads/v1/src/Baggages/Icons/counter.png" /></th>
+        <th data-ofm="OFM-InternetWeatherModule" class="colHover" title="Internet Wetter: Wetterdaten von Internetdiensten"><img src="https://raw.githubusercontent.com/OpenKNX/OFM-InternetWeatherModule/refs/heads/v1/src/Baggages/Icons/weather-partly-cloudy.png" /></th>
         <th data-ofm="OFM-OneWireModule" class="colHover" title="1-Wire: Kommunikation mit 1-Wire-Geräten"><img src="https://raw.githubusercontent.com/OpenKNX/OFM-OneWireModule/refs/heads/v1/src/Baggages/Icons/vector-polyline.png" /></th>
         <th data-ofm="OFM-PresenceModule" class="colHover" title="Präsenzmelder: Virtueller Präsenzmelder"><img src="https://raw.githubusercontent.com/OpenKNX/OGM-Common/refs/heads/v1/src/Baggages/Icons/panorama-sphere-outline.png" /></th>
         <th data-ofm="OFM-ADCInput" class="colHover" title="Analogeingänge: Eingänge für analoge Signale"><img src="https://raw.githubusercontent.com/OpenKNX/OFM-ADCInput/refs/heads/v1/src/Baggages/Icons/alpha-v-circle-outline.png" /></th>
@@ -273,6 +280,8 @@
         <td data-ofm="OFM-Feedback" class="isPart colHover"></td>
         
         <td data-ofm="OFM-Meter" class="isPart colHover"></td>
+        
+        <td data-ofm="OFM-InternetWeatherModule" class="isPart colHover"></td>
         
         <td data-ofm="OFM-OneWireModule" class="isPart colHover"></td>
         
@@ -334,6 +343,8 @@
         
         <td data-ofm="OFM-Meter" class="isPart colHover"></td>
         
+        <td data-ofm="OFM-InternetWeatherModule" class="isPart colHover"></td>
+        
         <td data-ofm="OFM-OneWireModule" class="isPart colHover"></td>
         
         <td data-ofm="OFM-PresenceModule" class="isPart colHover"></td>
@@ -370,7 +381,7 @@
         
         <td data-ofm="OFM-FileTransferModule" class="isPart colHover">&#9724;</td>
         
-        <td data-ofm="OFM-Network" class="isPart colHover"></td>
+        <td data-ofm="OFM-Network" class="isPart colHover">&#9724;</td>
         
         <td data-ofm="OFM-UsbExchange" class="isPart colHover"></td>
         
@@ -393,6 +404,8 @@
         <td data-ofm="OFM-Feedback" class="isPart colHover"></td>
         
         <td data-ofm="OFM-Meter" class="isPart colHover"></td>
+        
+        <td data-ofm="OFM-InternetWeatherModule" class="isPart colHover">&#9724;</td>
         
         <td data-ofm="OFM-OneWireModule" class="isPart colHover"></td>
         
@@ -454,6 +467,8 @@
         
         <td data-ofm="OFM-Meter" class="isPart colHover"></td>
         
+        <td data-ofm="OFM-InternetWeatherModule" class="isPart colHover"></td>
+        
         <td data-ofm="OFM-OneWireModule" class="isPart colHover"></td>
         
         <td data-ofm="OFM-PresenceModule" class="isPart colHover"></td>
@@ -513,6 +528,8 @@
         <td data-ofm="OFM-Feedback" class="isPart colHover">&#9724;</td>
         
         <td data-ofm="OFM-Meter" class="isPart colHover">&#9724;</td>
+        
+        <td data-ofm="OFM-InternetWeatherModule" class="isPart colHover"></td>
         
         <td data-ofm="OFM-OneWireModule" class="isPart colHover">&#9724;</td>
         
@@ -574,6 +591,8 @@
         
         <td data-ofm="OFM-Meter" class="isPart colHover"></td>
         
+        <td data-ofm="OFM-InternetWeatherModule" class="isPart colHover"></td>
+        
         <td data-ofm="OFM-OneWireModule" class="isPart colHover"></td>
         
         <td data-ofm="OFM-PresenceModule" class="isPart colHover">&#9724;</td>
@@ -633,6 +652,8 @@
         <td data-ofm="OFM-Feedback" class="isPart colHover"></td>
         
         <td data-ofm="OFM-Meter" class="isPart colHover">&#9724;</td>
+        
+        <td data-ofm="OFM-InternetWeatherModule" class="isPart colHover"></td>
         
         <td data-ofm="OFM-OneWireModule" class="isPart colHover"></td>
         
@@ -695,6 +716,8 @@
         <td data-ofm="OFM-Feedback" class="isPart colHover"></td>
         
         <td data-ofm="OFM-Meter" class="isPart colHover"></td>
+        
+        <td data-ofm="OFM-InternetWeatherModule" class="isPart colHover"></td>
         
         <td data-ofm="OFM-OneWireModule" class="isPart colHover">&#9724;</td>
         
