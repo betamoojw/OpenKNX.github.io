@@ -19,6 +19,8 @@
         table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(11):hover) tr > :nth-child(11).colHover,
         table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(12):hover) tr > :nth-child(12).colHover,
         table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(13):hover) tr > :nth-child(13).colHover,
+        table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(14):hover) tr > :nth-child(14).colHover,
+        table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(15):hover) tr > :nth-child(15).colHover,
         
         table.openknxTitleTable tbody tr:hover {
             background-color: #dfd;
@@ -34,7 +36,9 @@
         table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(10):hover) thead th.rotate45:nth-child(10) div span,
         table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(11):hover) thead th.rotate45:nth-child(11) div span,
         table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(12):hover) thead th.rotate45:nth-child(12) div span,
-        table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(13):hover) thead th.rotate45:nth-child(13) div span
+        table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(13):hover) thead th.rotate45:nth-child(13) div span,
+        table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(14):hover) thead th.rotate45:nth-child(14) div span,
+        table.openknxTitleTable:has(tr.hoverTrigger > :nth-child(15):hover) thead th.rotate45:nth-child(15) div span
         
         {
             border-bottom: 2px solid #9f9;
@@ -80,6 +84,10 @@
         
         <col data-ofm="OFM-FunctionBlocks" />
         
+        <col data-ofm="OFM-VirtualButton" />
+        
+        <col data-ofm="OFM-BinaryInput" />
+        
         <col data-ofm="OGM-SensorDevices" />
         
         <col data-ofm="OFM-SensorModule" />
@@ -92,7 +100,7 @@
     <thead>
       <tr class="colGroupTitle">
         <th class="before-new-cols">Applikation</th>
-        <th class="before-new-cols" colspan="11">Enthaltene Module</th>
+        <th class="before-new-cols" colspan="13">Enthaltene Module</th>
         
       </tr>
       <tr class="hoverTrigger">
@@ -116,6 +124,10 @@
         
         <th class="rotate45" data-ofm="OFM-FunctionBlocks"><div><span><a href="/ofm/OFM-FunctionBlocks">OFM-FunctionBlocks</a></span></div></th>
         
+        <th class="rotate45" data-ofm="OFM-VirtualButton"><div><span><a href="/ofm/OFM-VirtualButton">OFM-VirtualButton</a></span></div></th>
+        
+        <th class="rotate45" data-ofm="OFM-BinaryInput"><div><span><a href="/ofm/OFM-BinaryInput">OFM-BinaryInput</a></span></div></th>
+        
         <th class="rotate45" data-ofm="OGM-SensorDevices"><div><span><a href="/ofm/OGM-SensorDevices">OGM-SensorDevices</a></span></div></th>
         
         <th class="rotate45" data-ofm="OFM-SensorModule"><div><span><a href="/ofm/OFM-SensorModule">OFM-SensorModule</a></span></div></th>
@@ -138,6 +150,8 @@
         <th data-ofm="OFM-ConfigTransfer" class="colHover" title="Konfigurationstransfer: Kopieren, Import, Export von ETS-Einstellungen"><img src="https://raw.githubusercontent.com/OpenKNX/OFM-ConfigTransfer/refs/heads/v1/src/Baggages/Icons/ofm-configtransfer.png" /></th>
         <th data-ofm="OFM-LogicModule" class="colHover" title="Logiken: Logikfunktionen, Wertekonvertierung und Zeitschaltuhren"><img src="https://raw.githubusercontent.com/OpenKNX/OGM-Common/refs/heads/v1/src/Baggages/Icons/blur.png" /></th>
         <th data-ofm="OFM-FunctionBlocks" class="colHover" title="Funktionsblöcke: Bausteine mit verschiedenen Standardfunktionen"><img src="https://raw.githubusercontent.com/OpenKNX/OFM-FunctionBlocks/refs/heads/v1/src/Baggages/Icons/texture-box.png" /></th>
+        <th data-ofm="OFM-VirtualButton" class="colHover" title="Virtuelle Taster: Virtuelle Taster"><img src="https://raw.githubusercontent.com/OpenKNX/OGM-Common/refs/heads/v1/src/Baggages/Icons/button-pointer.png" /></th>
+        <th data-ofm="OFM-BinaryInput" class="colHover" title="Binäreingänge: Binäreingänge"><img src="https://raw.githubusercontent.com/OpenKNX/OGM-Common/refs/heads/v1/src/Baggages/Icons/arrow-right-circle-outline.png" /></th>
         <th data-ofm="OGM-SensorDevices" class="colHover" title="">|</th>
         <th data-ofm="OFM-SensorModule" class="colHover" title="Sensoren: Hardware-Umweltsensoren"><img src="https://raw.githubusercontent.com/OpenKNX/OGM-Common/refs/heads/v1/src/Baggages/Icons/gauge.png" /></th>
         
@@ -173,6 +187,10 @@
         <td data-ofm="OFM-LogicModule" class="isPart colHover">&#9724;</td>
         
         <td data-ofm="OFM-FunctionBlocks" class="isPart colHover">&#9724;</td>
+        
+        <td data-ofm="OFM-VirtualButton" class="isPart colHover"></td>
+        
+        <td data-ofm="OFM-BinaryInput" class="isPart colHover"></td>
         
         <td data-ofm="OGM-SensorDevices" class="isPart colHover">&#9724;</td>
         
@@ -210,6 +228,10 @@
         <td data-ofm="OFM-LogicModule" class="isPart colHover">&#9724;</td>
         
         <td data-ofm="OFM-FunctionBlocks" class="isPart colHover">&#9724;</td>
+        
+        <td data-ofm="OFM-VirtualButton" class="isPart colHover">&#9724;</td>
+        
+        <td data-ofm="OFM-BinaryInput" class="isPart colHover">&#9724;</td>
         
         <td data-ofm="OGM-SensorDevices" class="isPart colHover"></td>
         
